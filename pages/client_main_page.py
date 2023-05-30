@@ -12,6 +12,8 @@ class ClientPageLocators(BasePageLocators):
     BUTTON_ABOUT_US = (By.XPATH, "//div[contains(@class, 'menu')]//a[@href='/about'][@class]")
     # xpath заголовка страницы about us
     TITLE_PAGE_ABOUT_US = (By.XPATH, "//div[@class='tn-atom'][text()='Inktech']")
+    # Блок с преимуществами компании
+    BLOCK_ADVANTAGES = (By.XPATH, "//div[@class='t396__filter'][@data-artboard-recid='568093052']")
 
 
 class ClientPage(BasePage):

@@ -1,3 +1,4 @@
+import time
 import allure
 
 from selenium.webdriver.support.ui import WebDriverWait
@@ -21,8 +22,8 @@ class SeleniumWrapper:
         self.browser.set_window_size(int(width), 1000)
 
     @allure.step("Проскролить к элементу")
-    def scroll_to_element(self, how, what):
-        self.wait_for_visibility(how, what)
+    def in_scroll_to_element(self, how, what):
+        time.sleep(3)
         element = self.browser.find_element(how, what)
         self.browser.execute_script("arguments[0].scrollIntoView();", element)
 
