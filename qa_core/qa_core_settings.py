@@ -1,7 +1,7 @@
 class QaCoreSettings(object):
     CHROME_BROWSER_VERSION = "latest"  # можно указать конкретную версию браузера
     FIREFOX_BROWSER_VERSION = "latest"  # можно указать конкретную версию браузера
-    S3_BUCKET_NAME = "community-site-qa"
+    S3_BUCKET_NAME = "inktech"
     TIME_OUT = 60
     STEP = 0.1
     AWS_ACCESS_KEY_ID = "AKIA2LUBMXL3D2MP52W7"

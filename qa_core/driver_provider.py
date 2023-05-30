@@ -20,7 +20,7 @@ def create(browser_name, width, language):
         # Отключить механизм безопасности браузера:
         options.add_argument("--no-sandbox")
         # Настроить работу браузера в фоновом режиме без окон:
-        options.add_argument("--headless")
+        # options.add_argument("--headless")
         # Игнорировать ошибки SSL сертификатов:
         options.add_argument("--ignore-certificate-errors")
         # Разрешение загрузки небезопасного контента:
@@ -34,7 +34,8 @@ def create(browser_name, width, language):
         options.add_argument("--start-maximized")  # for max size window
 
         # Инициализация браузера:
-        browser = webdriver.Remote(command_executor=BaseTest.MOON_URL, options=options)
+        # browser = webdriver.Remote(command_executor=BaseTest.MOON_URL, options=options)
+        browser = webdriver.Chrome(options=options)
         # Настроить размер окна браузера:
         # browser.set_window_size(int(width), 1300)  # set window size
         return browser
@@ -47,7 +48,7 @@ def create(browser_name, width, language):
         options.set_capability("browserVersion", QaCoreSettings.FIREFOX_BROWSER_VERSION)
 
         # Инициализация браузера:
-        browser = webdriver.Remote(command_executor=BaseTest.MOON_URL, options=options)
+        browser = webdriver.Firefox(options=options)
         # browser.maximize_window()
         browser.set_window_size(int(width), 1300)
         return browser
