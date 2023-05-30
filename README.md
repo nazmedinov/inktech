@@ -1,5 +1,5 @@
 # inktech
-Autotests for inktech.org
+Autotests for https://inktech.org/
 
 Примеры автотестов: скриншотные, e2e и api.
 
