@@ -1,5 +1,6 @@
 import pytest
 import allure
+import time
 
 from qa_core.screenshooter import ScreenShooter
 from pages.client_main_page import ClientPageLocators
