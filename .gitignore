@@ -1,0 +1,11 @@
+*.log
+.idea
+.DS_Store
+*.py[cod]
+*$py.class
+/venv
+.pytest_cache
+allure_results/
+allure-report/
+Screenshots/
+results/
