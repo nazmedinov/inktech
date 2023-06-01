@@ -4,5 +4,5 @@ class QaCoreSettings(object):
     S3_BUCKET_NAME = "inktech"
     TIME_OUT = 60
     STEP = 0.1
-    AWS_ACCESS_KEY_ID = "AKIA2LUBMXL3D2MP52W7"
-    AWS_SECRET_ACCESS_KEY = "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"
+    AWS_ACCESS_KEY_ID = AAKID
+    AWS_SECRET_ACCESS_KEY = ASAK
